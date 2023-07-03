@@ -1,0 +1,57 @@
+/* Seletor Universal - serve para todos os campos da página */
+* {
+    border: 1px solid red;
+}
+
+/* Seletores de Texto */
+h1 {
+    color: aqua;
+}
+
+/* Seletor de Classe */
+.verde {
+    color: green;
+}
+/*Todos os itens que sejam pertencentes a classe verde*/
+
+p.verde {
+    color: #131313;
+}
+
+/*Apenas os itens <p> que sejam pertencentes a classe verde*/
+
+/* Seletor de ID */
+#carambolas {
+    color: white;
+}
+
+/* Seletor de Filho (Somente filhos diretos) */
+/* Seleciona quaisquer elementos <a> que são filhos de um elemento <li> 
+(mas não outros elementos a na página) */
+li>a {
+    text-decoration: none;
+    color: blue;
+}
+
+/* Seletor de Descendente ( Não precisa ser filho direto, apenas descendente ex: caso tenha um <span> ) */ 
+/*Seleciona quaisquer elementos <a> que residem dentro de um elemento <p>,
+mesmo e houver outros elementos aninhados entre eles*/ 
+
+p a {
+    color: brown;
+    text-decoration: none;
+}
+
+/* Seletor de Irmão Adjacente */
+/* Seleciona o primeiro elemento <p> depois de qualquer elemento <h1> (mas não outros elementos <p>) */
+
+h1 + p {
+    color: orange;
+}
+
+/* Seletor de Irmão Geral */
+/* Se houvesse dois elementos <p> que fossem irmãos de um elemento <h1>, essa regra se aplicaria ao dois */
+
+h2 ~ p {
+    color: pink;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Desafio 04 - JavaScript</title>
+
+    <style>
+        .estilo1 {
+            background: blue;
+            color: #fff;
+        }
+        .estilo2 {
+            background: yellow;
+        }
+    </style>
+
+    <script>
+        function comFoco() {
+            document.getElementById('caixa_texto').className = 'estilo2'
+        }
+        function perdeuFoco() {
+            let tamanhoCampo = document.getElementById('caixa_texto').value;
+            if (tamanhoCampo.length == 0) {
+                document.getElementById('caixa_texto').style.background = 'yellow';
+            } else if (tamanhoCampo.length <= 3) {
+                document.getElementById('caixa_texto').style.background = 'red';
+            } else if (tamanhoCampo.length > 3) {
+                document.getElementById('caixa_texto').style.background = 'green';
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    
+    <input onfocus="comFoco()" onblur="perdeuFoco()" class="estilo1" type="text" id="caixa_texto">
+
+</body>
+</html>

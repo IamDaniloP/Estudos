@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implementação do JavaScript - Teclado</title>
+    <script>
+        function acao() {
+            alert('A tecla foi pressionada')
+        }
+
+        function acao2() {
+            alert('A tecla ainda está sendo pressionada')
+        }
+
+        function acao3() {
+            alert('A tecla parou de ser pressionada')
+        }
+    </script>
+
+</head>
+
+<body>
+    Teste 1
+    <input onkeydown="acao()" type="text"> <!--Evendo disparado quando alguma tecla que seja de caractere foi pressionada-->
+    <br><br>
+    Teste 2
+    <input onkeypress="acao2()" type="text"> <!--Evento disparado quando alguma tecla que seja caractere continua sendo pressionada-->
+    <br><br>
+    Teste 3
+    <input onkeyup="acao3()" type="text"> <!--Evento disparado quando alguma tecla que seja caractere parou de ser pressionada-->
+</body>
+</html>

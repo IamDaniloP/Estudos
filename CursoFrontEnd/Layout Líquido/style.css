@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #ffffff;
+}
+
+#container1 {
+
+    width: 720px;
+    margin: 0 auto;
+    background: #fcbcfcef;
+
+}
+
+#container2 {
+    border-top: solid 2px  #dd11dd4d;
+    width: 720px;
+    margin: 0 auto;
+}
+
+#marca {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    color: white;
+}
+
+#marca h2 {
+    line-height: 4;
+}
+
+#navegacao {
+    text-align: center;
+}
+
+#navegacao a {
+    text-decoration: none;
+    color: white;
+    padding: 0 20px;
+    
+      
+}
+
+#navegacao a:hover {
+    background: white;
+    color: black;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+
+}
+
+#conteudo {
+    margin: 10px;
+}
+
+#conteudo h3{
+    font-size: 25px;
+    font-style: italic;
+    text-align: center;
+    background-color: #ffffff;
+    border-bottom: solid 1px #fcbcfcef;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+
+}
+
+#conteudo img {
+    margin: 0 5px;
+}
+
+#conteudo p {
+    text-align: center;
+    text-align: justify;
+    width: 190px;
+    padding: 0 5px;  
+    background-color: #fcbcfcef; 
+    color: rgb(255, 255, 255); 
+}
+
+#conteudo1 {
+    width: 200px;
+    float: left;
+    border-radius: 5px;
+    border: solid 3px #fcbcfcef;
+}
+
+#conteudo2 {
+    width: 200px;
+    float: right;
+    border-radius: 5px;
+    border: solid 3px #fcbcfcef;
+}
+
+#conteudo3 {
+    margin-right: 40px;
+    width: 200px;
+    float: right;
+    border-radius: 5px;
+    border: solid 3px #fcbcfcef;
+}
+
+/*Aqui não deixei líquido. Para deixar o o Layout líquido, é usado porcentagem. Você tembém pode definir o seu mínimo e máximo de largura e altura. min-width e max-width ou min-height e max-height. */ 

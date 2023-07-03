@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript</title>
+  <script>
+
+    let lista_frutas = Array();
+    lista_frutas[0] = 'abacaxi';
+    lista_frutas[1] = 'abacate'
+    lista_frutas[2] = 'maçã';
+    lista_frutas[3] = 'morango';
+    lista_frutas[4] = 'uva';
+
+    console.log(lista_frutas.sort()); //serve para reorganizar em ordem alfanumérica, ou seja, apenas letras.
+
+    let lista_numeros = Array();
+    lista_numeros[0] = 12;
+    lista_numeros[1] = 3
+    lista_numeros[2] = 8
+    lista_numeros[3] = 0
+    lista_numeros[4] = 2
+
+    console.log(lista_numeros.sort(ordenarNumeros)) //não colocar os parentezes para a função ordenar números
+
+    function ordenarNumeros(a, b) {
+        return a - b;
+        //< 0 = a ordenado antes de b
+        // > 0 = a ordenado depois de b
+        // == a ordem é mantida
+    }
+
+  </script>
+
+</head>
+
+<body>
+  
+</body>
+
+</html>

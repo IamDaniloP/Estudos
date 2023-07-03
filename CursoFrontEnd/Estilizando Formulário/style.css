@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #ddd;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    margin: 10px 20px;
+}
+fieldset {
+    margin: 20px;
+    padding: 10px;
+    width: 180px;
+}
+
+fieldset legend {
+    width: 142px;
+    font-size: 17px;
+    margin-left: 19px;
+    font-weight: bold;
+}
+
+.edit {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    width: 70px;
+    height: 25px;
+    border-radius: 10px;
+    margin-left: 90px;
+    font-size: 15px;
+}
+
+fieldset h3 {
+    font-size: 15px;
+    margin-left: 50px;
+}
+
+fieldset textarea {
+    margin: 9px;
+    width: 160px;
+    height: 160px;
+    text-align: left;
+}

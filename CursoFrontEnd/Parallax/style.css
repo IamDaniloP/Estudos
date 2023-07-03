@@ -1,0 +1,64 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div.caixaimg {
+    position: relative;
+    height: 100%;
+    opacity: 0.8;
+}
+
+.titulo {
+    position: absolute;
+    width: 100%;
+    top: 45%;
+    text-align: center;
+}
+
+.titulo span {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: #c5c5c5;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+div.caixatexto {
+    color: #fff;
+    font-size: 20px;
+    background: #c5c5c5;
+    text-align: justify;
+    padding: 10px 90px;
+
+}
+
+div.caixatexto h2 {
+    margin: 0;
+}
+
+div.caixatexto p {
+    margin: 10px 0;
+}
+div#caixaimg1 {
+    background: url(img/imagem1.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+div#caixaimg2 {
+    background: url(img/imagem2.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+div#caixaimg3 {
+    background: url(img/imagem3.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implementação do JavaScript - Mouse</title>
+    <script>
+        function acao() {
+            alert('Clicou uma vez')
+        }
+
+        function acao2() {
+            alert('Clicou duas vezes')
+        }
+
+        function acao3() {
+            alert('Você soltou o clique')
+        }
+
+        function acao4() {
+            alert('Você passou o mouse sobre a região')
+        }
+
+        function acao5() {
+            alert('Você tirou o mouse da região')
+        }
+    </script>
+
+</head>
+
+<body>
+    <div onclick="acao()" style="background: #ccc; height: 150px; width: 150px;"></div> <!--Evento disparado quando o elemento é clicado-->
+    <br>
+    <div ondblclick="acao2()" style="background: #d77; height: 150px; width: 150px;"></div> <!-- Evento disparado quando o elemento é clicado duas vezes-->
+    <br>
+    <div onmouseup="acao3()" style="background: #d44; height: 150px; width: 150px;"></div> <!-- Evento disparado quando o clique do mouse para de ser pressionado-->
+    <br> 
+    <div onmouseover="acao4()" style="background: #d15; height: 150px; width: 150px;"></div> <!-- Evento disparado quando o cursor do mouse sobrepõe a região-->
+    <br>
+    <div onmouseover="acao4()" onmouseout="acao5()" style="background: #d1d; height: 150px; width: 150px;"></div> <!-- Evento disparado quando o cursor do mouse sai da região-->
+</body>
+</html>

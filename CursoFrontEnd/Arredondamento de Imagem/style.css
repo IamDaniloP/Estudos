@@ -1,0 +1,21 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.caixa {
+    width: 400px;
+    background: url(img/fundo.png) repeat-y;   
+}
+
+.caixa h2 {
+    padding: 10px 20px 0 20px;
+    background: url(img/topo2.png) no-repeat;
+}
+.caixa p {
+    padding: 10px 20px 10px 20px;
+}
+p.ultimo {
+
+    padding: 10px 20px 10px 20px;
+    background: url(img/baixo2.png) no-repeat left bottom;
+}

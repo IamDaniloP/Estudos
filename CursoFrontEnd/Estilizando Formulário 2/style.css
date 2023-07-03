@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url(./img/fundo.jpg) no-repeat;
+    width: 1280px;
+}
+
+body h2 {
+    color: white;
+    text-transform: uppercase;
+}
+
+#container {
+    width: 400px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    margin-left: 400px;
+    margin-top: 200px;
+    text-align: center;
+}
+
+form {
+    margin-top: 20px;
+}
+
+#container img {
+
+    width: 120px;
+    height: 120px;
+    margin-top: -60px; /* ao botar essa margem negativa com a metade do tamanho da imagem, ela fica centralizada para cima*/
+    margin-bottom: 30px;
+
+}
+
+input{
+    height: 30px;
+    width: 50%;
+    font-size: 16px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: none;
+    padding-left: 30px;
+    background-repeat: no-repeat; /* Para o background não se repetir */
+    background-position: 5px; /* Distanciamento entre o background e a margem*/
+}
+
+input.email {
+    background-image: url(./img/icone-usuario.png) ;
+    background-color: #fff;
+}
+
+input.senha {
+    background-image: url(./img/icone-cadeado.png) ;
+    background-color: #fff;
+}
+
+input.submit {
+    color: #fff;
+    background-color: #f79333;
+    padding-left: 0;
+    text-align: center;
+    width: 25%;
+
+}

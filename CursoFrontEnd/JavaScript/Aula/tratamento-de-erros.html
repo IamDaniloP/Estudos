@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tratamentos de erros</title>
+
+    <script>
+
+        //netflix
+        let video = Array()
+
+        video[1] = Array ()
+        video[1]['nome'] = 'Fullmetal'
+        video[1]['categoria'] = 'Anime'
+
+        function getVideo(video) {
+            //logica
+            //requisições http
+
+            try { //tente isso
+                console.log(video[0]['nome']); //aqui é onde apresenta o erro
+            } catch(erro) { //caso não, pegue o erro
+                console.log(erro); //string que apresenta o erro
+                //console.log('Agora sim podemos tratar esse erro!')
+                throw new Error('Houve um erro mas não se preocupe, estamos trabalhando nisso agora!!!')
+            } finally { //depois de pegar o erro, finalmente faça
+                console.log('Sempre passa por aqui (try/catch)')
+            }
+            
+            console.log('A aplicação não morreu')
+
+        }
+
+        function tratarErro (erro) {
+            //logica para registrar o erro do servidor
+            console.log(erro);
+        }
+
+        getVideo(video);
+    
+    </script>
+
+</head>
+
+<body>
+
+
+
+</body>
+
+</html>

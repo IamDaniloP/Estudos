@@ -1,0 +1,55 @@
+#conteudo {
+    background: #dcdcdc;
+    display: flex;
+    height: 400px;
+    /*flex-direction: row;*/
+    /*flex-direction: row-reverse;*/
+    /*flex-direction: column;*/
+    /*flex-direction: column-reverse;*/
+    /*flex-wrap: nowrap;*/
+    /*flex-wrap: wrap;*/
+    /*flex-wrap: wrap-reverse;*/
+    /*justify-content:flex-start; -- no canto esquerdo*/
+    /*justify-content:flex-end; -- no canto direito*/
+    /*justify-content:center; -- centralizar os itens*/
+    /*justify-content:space-between; -- distribui os itens adicionando um espaçamento entre eles (as pontas ficam no canto)*/
+    justify-content:space-around; /*-- distribui inserindo margens iguais nas extremidades*/
+    /*align-items: stretch;*/
+    align-items: center;
+    /*align-items: flex-start;
+    align-items: flex-end;*/
+    /*align-items: baseline; -- Alinha os itens ao texto*/
+    
+
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background: white;
+    border: 1px solid gray;
+    flex-grow: 1;
+    flex-shrink: 2; /*define a proporção de espaço ocupado por um item(menor)*/
+    flex-basis: 100px;
+}
+
+.item1 {
+    flex-grow: 1; /*define a proporção de espaço ocupado por um item(maior)*/
+}
+
+/*.ordem1 {
+    order: 2;
+}
+
+.ordem2 {
+    order: 3;
+}
+
+.ordem3 {
+    order: 4;
+}
+
+.ordem4 {
+    order: 1;
+}*/

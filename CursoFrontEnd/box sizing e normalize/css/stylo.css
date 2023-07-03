@@ -1,0 +1,20 @@
+/*#caixa {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 300px;
+    height: 300px;
+    background: #b9c941;
+    margin: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    rgba (255,255,255,0.5) -- transparência
+    box-sizing: border-box; /* Serve para ele não acrescer o valor do padding no tamanho da caixa,
+    ou seja, se eu definir a caixa com width de 300px e colocar um margin de 50px, ela terá um total 
+    de 300px e não de 400px.
+}*/
+
+#caixa {
+    width: 50%;
+    height: 50%;
+    background: linear-gradient(/*to bottom left*/ 60deg, #d1d1, #cc9999), yellow;
+    /*background: radial-gradient(#d1d1, #cc9999, yellow);*/
+}

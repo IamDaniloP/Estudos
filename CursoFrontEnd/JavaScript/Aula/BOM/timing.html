@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+
+    <script>
+        
+        /*function ab (a,b) {
+            return a+b;
+        }*/
+
+        //o set timeout ele vai executar uma ação após o tempo informado (uma vez)
+        /*setTimeout(<ação>, <tempo em milissegundos>);
+        clearTimeout();*/
+        setTimeout(function() {document.write('teu pai tá na zona <br />')}, 10000); //10s
+
+
+        //o set interval executa a ação após o período informado (constante)
+        let i = 10;
+
+        /*
+        setInterval(function () {
+            document.write('teu pai tá na casa da tua mãe ' + i +'<br />')
+            i--;
+
+            if (i < 0) {
+                window.location.reload();// recarrega a página sempre que o i seja menor que 0
+            }
+        }
+        , 500) //0,5s
+        */
+
+        let x = setInterval(function () {
+            document.write('teu pai tá na casa da tua mãe ' + i +'<br />')
+            i--;
+
+            if (i < 0) {
+                clearInterval(x); //isso diz para que o para que o método pare depois que foi executado completamente.
+            }
+        }
+        , 500) //0,5s
+
+    </script>
+
+    <title>BOM - Location</title>
+
+</head>
+
+<body>
+    
+   
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Estrutura de Repetição - For-In</title>
+    <script>
+
+        //let listaConvidados = Array('Jorge', 'Cleiton', 'Cleber', 'Junior', 'Didao', 'Jocadas')
+        let listaConvidados = Array();
+
+        listaConvidados[2] = 'Jorge'
+        listaConvidados['a'] = 'Cleiton'
+        listaConvidados[true] = 'Junior'
+        listaConvidados[20] = 'Didao'
+
+        console.log(listaConvidados)
+
+        for (let x in listaConvidados) {
+            console.log('Índice ' + x + ' valor: ' + listaConvidados[x])
+        }
+
+        //sendo assim, para percorrer um array, é mais recomendado o método for in, uma vez que ele não precisa que o índice de cada item seja sequencial para efetuar a impressão.
+        //caso fosse um laço de repetição for ou while, iria resultar em um erro, já que o índice não é sequencial e também tem outros tipos como string e booleano. 
+
+    </script>
+
+</head>
+
+<body>
+
+
+
+</body>
+
+</html>

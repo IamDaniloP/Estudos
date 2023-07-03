@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript</title>
+
+  <script>
+
+    //Array básico
+
+    let lista_frutas = Array('Banana', 'Maçã', 'Pêra');
+
+    //incluir elementos no final do array
+    lista_frutas.push('Abacaxi');
+
+    //incluir elementos no início do array
+    lista_frutas.unshift('Morango');
+
+    //excluir elementos no final do array
+    //lista_frutas.pop();
+
+    //excluir elementos no inicio do array
+    //lista_frutas.shift();
+
+    console.log(lista_frutas)
+
+    //------------------------------------------------
+    // Array Multidimensional
+    let lista_coisas = Array();
+
+    lista_coisas['frutas'] = Array();
+    lista_coisas['frutas']['Banana'] = Array('Banana-Prata', 'Banana-Maçã', 'Banana-Pêra');
+    lista_coisas['frutas'][0] = 'Uva';
+    lista_coisas['frutas'][1] = 'Morango';
+
+    lista_coisas['pessoas'] = Array();
+    lista_coisas['pessoas'][0] = 'Cleber';
+    lista_coisas['pessoas'][1] = 'Cleiton';
+    lista_coisas['pessoas'][2] = 'Clebersson';
+
+    //incluir elementos no final do array com índice Banana
+    lista_coisas['frutas']['Banana'].push('teu pai tá na zona');
+
+    //excluir elementos no inicio do array com índice Banana -- nesse caso, irá remover o banana-prata
+    lista_coisas['frutas']['Banana'].shift();
+
+    console.log(lista_coisas)
+
+  </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

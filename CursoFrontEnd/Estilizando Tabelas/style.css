@@ -1,0 +1,34 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+table {
+    width: 600px;
+
+}
+
+table th, td {
+    padding: 7px;
+}
+
+table th {
+text-transform: uppercase; /* Deixa todas letras em maiúsculo */
+border-top: solid 1px #999;
+border-bottom: solid 1px #111 ;
+text-align: left;
+font-size: 90%; 
+letter-spacing: 0.1em;/* Serve para fazer a separação entre as letras*/
+
+}
+
+tr.alterna {
+    background: #efefef;
+}
+
+.numero {
+    text-align: right;
+}
+
+tr.hover:hover {
+    background: #d1d1;
+}

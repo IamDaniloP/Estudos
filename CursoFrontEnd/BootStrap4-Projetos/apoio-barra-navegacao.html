@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+
+    <title>Bootstrap - Barra de Navegação</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  </head>
+
+  <body>
+
+    <!-- Navegação
+    Tipos de navegação:
+        nav-pills - só irá arredondar as bordar do página ativa
+        nav-tabs
+    opções de alinhamento: 
+        justify-content-center 
+        justify-content-end
+        flex-column
+    -->
+    <h2>Navegação simples / abas</h2>
+    <ul class="nav nav-tabs justify-content-center">
+      <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+      <li class="nav-item"><a href="" class="nav-link">Sobre</a></li>
+      <li class="nav-item"><a href="" class="nav-link">Serviços</a></li>
+    </ul>
+    
+
+    <h2>Barra de navegação simples</h2>
+    <nav class="navbar navbar-expand navbar-dark bg-dark"> <!--O navbar-expand-sm serve para quuando a tela for do tamanho sm ela mostrar o menu hamburguer-->
+      <!--Logo-->
+      <a href="" class="navbar-brand">Chalé Hotel</a>
+
+        <!--Navegação-->
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+        </ul>
+
+    </nav>
+
+    <h2>Barra de navegação com menu responsivo</h2>
+    
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark"> <!--O navbar-expand-sm serve para quuando a tela for do tamanho sm ela mostrar o menu hamburguer-->
+      <!--Logo-->
+      <a href="" class="navbar-brand">Chalé Hotel</a>
+
+      <!--Menu Hamburguer-->
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-menu"> <!--Vai pegar o id da div da ul-->
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="nav-menu">
+        <!--Navegação-->
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+        </ul>
+      </div>
+
+    </nav>
+
+
+    <h2>Barra de navegação com formulário</h2>
+
+    <nav class="navbar navbar-dark bg-dark"> <!--O navbar-expand-sm serve para quuando a tela for do tamanho sm ela mostrar o menu hamburguer-->
+      
+      <!--Logo-->
+      <a href="" class="navbar-brand">Chalé Hotel</a>
+
+      <!--Formulário de Pesquisa-->
+      <form class="form-inline">
+
+        <input type="text" class="form-control" placeholder="pesquisar...">
+        <button class="btn btn-outline-success">Enviar</button>
+      
+      </form>
+
+      <!--Menu Hamburguer-->
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-menu2"> <!--Vai pegar o id da div da ul-->
+        
+        <span class="navbar-toggler-icon"></span>
+      
+      </button>
+
+      <div class="collapse navbar-collapse" id="nav-menu2"> <!--Navegação-->
+
+        <ul class="navbar-nav m-auto">
+
+          <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+        
+        </ul>
+
+      </div>
+
+    </nav>
+
+    <h2>Barra de navegação com menu dropdown</h2>
+
+    <nav class="navbar navbar-expand navbar-dark bg-dark"> <!--O navbar-expand-sm serve para quuando a tela for do tamanho sm ela mostrar o menu hamburguer-->
+      
+      <!--Logo-->
+      <a href="" class="navbar-brand">Chalé Hotel</a>
+
+      <!--Navegação-->
+        <ul class="navbar-nav m-auto ">
+
+          <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="" class="nav-link">Produtos</a></li>
+          <li class="nav-item dropdown">
+            <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Serviços</a>
+
+            <div class="dropdown-menu">
+              <a href="" class="dropdown-item">Serviço 1</a>
+              <a href="" class="dropdown-item">Serviço 2</a>
+            </div>
+          </li>
+        
+        </ul>
+
+    </nav>
+
+    <h2>Cores</h2>
+      <nav class="navbar navbar-expand navbar-dark bg-warning"> <!--O navbar-expand-sm serve para quuando a tela for do tamanho sm ela mostrar o menu hamburguer-->
+        
+        <!--Logo-->
+        <a href="" class="navbar-brand">Chalé Hotel</a>
+
+        <!--Navegação-->
+          <ul class="navbar-nav m-auto ">
+
+            <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Produtos</a></li>
+            <li class="nav-item dropdown">
+              <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Serviços</a>
+
+              <div class="dropdown-menu">
+                <a href="" class="dropdown-item">Serviço 1</a>
+                <a href="" class="dropdown-item">Serviço 2</a>
+              </div>
+            </li>
+          
+          </ul>
+
+      </nav>
+
+    <h2>Alinhamento</h2>
+
+    <nav class="navbar sticky-top navbar-expand navbar-dark bg-success"> <!--O navbar-expand-sm serve para quuando a tela for do tamanho sm ela mostrar o menu hamburguer-->
+        
+      <!--Logo-->
+      <a href="" class="navbar-brand">Chalé Hotel</a>
+
+      <!--Navegação-->
+        <ul class="navbar-nav m-auto">
+
+          <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="" class="nav-link">Produtos</a></li>
+          <li class="nav-item dropdown">
+            <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Serviços</a>
+
+            <div class="dropdown-menu">
+              <a href="" class="dropdown-item">Serviço 1</a>
+              <a href="" class="dropdown-item">Serviço 2</a>
+            </div>
+          </li>
+        
+        </ul>
+
+    </nav>
+    
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem obcaecati ipsam perferendis molestias fuga et porro quasi omnis aspernatur, eligendi voluptatibus dolore facilis, nam ipsum impedit voluptatem, ullam illum inventore.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem obcaecati ipsam perferendis molestias fuga et porro quasi omnis aspernatur, eligendi voluptatibus dolore facilis, nam ipsum impedit voluptatem, ullam illum inventore.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem obcaecati ipsam perferendis molestias fuga et porro quasi omnis aspernatur, eligendi voluptatibus dolore facilis, nam ipsum impedit voluptatem, ullam illum inventore.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem obcaecati ipsam perferendis molestias fuga et porro quasi omnis aspernatur, eligendi voluptatibus dolore facilis, nam ipsum impedit voluptatem, ullam illum inventore.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem obcaecati ipsam perferendis molestias fuga et porro quasi omnis aspernatur, eligendi voluptatibus dolore facilis, nam ipsum impedit voluptatem, ullam illum inventore.</p>
+    
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem obcaecati ipsam perferendis molestias fuga et porro quasi omnis aspernatur, eligendi voluptatibus dolore facilis, nam ipsum impedit voluptatem, ullam illum inventore.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem obcaecati ipsam perferendis molestias fuga et porro quasi omnis aspernatur, eligendi voluptatibus dolore facilis, nam ipsum impedit voluptatem, ullam illum inventore.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem obcaecati ipsam perferendis molestias fuga et porro quasi omnis aspernatur, eligendi voluptatibus dolore facilis, nam ipsum impedit voluptatem, ullam illum inventore.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem obcaecati ipsam perferendis molestias fuga et porro quasi omnis aspernatur, eligendi voluptatibus dolore facilis, nam ipsum impedit voluptatem, ullam illum inventore.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem obcaecati ipsam perferendis molestias fuga et porro quasi omnis aspernatur, eligendi voluptatibus dolore facilis, nam ipsum impedit voluptatem, ullam illum inventore.</p>
+    
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem obcaecati ipsam perferendis molestias fuga et porro quasi omnis aspernatur, eligendi voluptatibus dolore facilis, nam ipsum impedit voluptatem, ullam illum inventore.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem obcaecati ipsam perferendis molestias fuga et porro quasi omnis aspernatur, eligendi voluptatibus dolore facilis, nam ipsum impedit voluptatem, ullam illum inventore.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem obcaecati ipsam perferendis molestias fuga et porro quasi omnis aspernatur, eligendi voluptatibus dolore facilis, nam ipsum impedit voluptatem, ullam illum inventore.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem obcaecati ipsam perferendis molestias fuga et porro quasi omnis aspernatur, eligendi voluptatibus dolore facilis, nam ipsum impedit voluptatem, ullam illum inventore.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem obcaecati ipsam perferendis molestias fuga et porro quasi omnis aspernatur, eligendi voluptatibus dolore facilis, nam ipsum impedit voluptatem, ullam illum inventore.</p>
+
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem obcaecati ipsam perferendis molestias fuga et porro quasi omnis aspernatur, eligendi voluptatibus dolore facilis, nam ipsum impedit voluptatem, ullam illum inventore.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem obcaecati ipsam perferendis molestias fuga et porro quasi omnis aspernatur, eligendi voluptatibus dolore facilis, nam ipsum impedit voluptatem, ullam illum inventore.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem obcaecati ipsam perferendis molestias fuga et porro quasi omnis aspernatur, eligendi voluptatibus dolore facilis, nam ipsum impedit voluptatem, ullam illum inventore.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem obcaecati ipsam perferendis molestias fuga et porro quasi omnis aspernatur, eligendi voluptatibus dolore facilis, nam ipsum impedit voluptatem, ullam illum inventore.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem obcaecati ipsam perferendis molestias fuga et porro quasi omnis aspernatur, eligendi voluptatibus dolore facilis, nam ipsum impedit voluptatem, ullam illum inventore.</p>
+
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem obcaecati ipsam perferendis molestias fuga et porro quasi omnis aspernatur, eligendi voluptatibus dolore facilis, nam ipsum impedit voluptatem, ullam illum inventore.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem obcaecati ipsam perferendis molestias fuga et porro quasi omnis aspernatur, eligendi voluptatibus dolore facilis, nam ipsum impedit voluptatem, ullam illum inventore.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem obcaecati ipsam perferendis molestias fuga et porro quasi omnis aspernatur, eligendi voluptatibus dolore facilis, nam ipsum impedit voluptatem, ullam illum inventore.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem obcaecati ipsam perferendis molestias fuga et porro quasi omnis aspernatur, eligendi voluptatibus dolore facilis, nam ipsum impedit voluptatem, ullam illum inventore.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem obcaecati ipsam perferendis molestias fuga et porro quasi omnis aspernatur, eligendi voluptatibus dolore facilis, nam ipsum impedit voluptatem, ullam illum inventore.</p>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

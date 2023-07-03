@@ -1,0 +1,5 @@
+/* Herança e Especificidade*
+/* A herança é mais interessante quando utilizada para colocar conteúdos genéricos da página, que serão usados como padrão em todos os locais.
+Um exemplo disso é a formatação do corpo do site (body), ela é utilizada para ter um padrão ** Por padrão border e background não são herdados***/
+/* A especificidade é interessante para fazer alterações pontuais, ou seja, como já diz, específicas. Para que não comprometa o padrão do site. **!important** 
+** Ordem de precedência: Id é mais específico que uma class, etc.. ** */

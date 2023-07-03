@@ -1,0 +1,30 @@
+#principal {
+
+    padding: 5px 10px;
+    margin: auto;
+    width: 46%;
+    background-color: rgb(87, 87, 87);
+
+}
+
+.noticias {
+
+    margin: 10px;
+    background-color: rgb(204, 204, 204);
+    padding: 5px 10px;
+    width: 280px;
+    float: left;
+}
+
+.clear {
+
+    clear: both;
+
+}
+
+.img {
+
+    padding: 5px 10px;
+    float: left;
+
+}

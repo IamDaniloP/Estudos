@@ -1,0 +1,30 @@
+/* Barra de Navegação Vertical */
+h2 {
+    padding-left: 10px;
+}
+
+ul {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+li>a {
+    display: block; /* O display block foi utilizado para que o link possa ocupar o espaço necessário. Isso é preciso pois link é inline, ou seja, ficam um ao lado do outro */
+    text-decoration: none;
+    color: black;
+    width: 200px;
+    height: 40px;
+    background: #f7b600 url(menu.png) no-repeat left;
+    text-indent: 30px;
+    line-height: 40px; /* Nova propriedade */
+}
+
+a:hover, .selecionado a /* Dessa maneira ele seleciona o link com uma classe do <li> */ {
+    background-position: right;
+    background-color: #f99200;
+    color: white;
+}

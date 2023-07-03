@@ -1,0 +1,38 @@
+/* Barra de Navegação Horizontal */
+h2 {
+    padding-left: 10px;
+}
+
+ul {
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: #159cb0 url(fundo-horizontal.png) repeat-x;
+    float: left; /*Maneira mais recomendada*/
+}
+
+
+ul li {
+    float: left; /* para limpar os fluxos anormais do documento, pois foi utilizado o float*/
+}
+
+ul a {
+
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    padding: 0 2em;
+    line-height: 2em;
+    background: url(divisor.png) repeat-y right/* Esse repeat-y é para que ele repita apenas caso aumente a altura do menu*/;
+
+}
+
+ul .ultimo a { /* Para remover o divisor do último*/
+    background: none;
+}
+
+ul a:hover {
+    color: #085662;
+    background-color: #44cade;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <script>
+
+        let janela;
+
+        function abrirPopUp() { //consultar documentação no w3schools
+          janela = window.open('', 'nova janela', 'width=200', 'height=100');
+        }
+
+        function fecharPopUp() {
+            janela.close();
+        }
+
+        function imprimirPrint() {
+            window.print();
+        }
+
+    </script>
+
+    <title>BOM - Window</title>
+</head>
+
+<body>
+    
+    <button onclick="abrirPopUp()">Abrir janela</button>
+    <button onclick="fecharPopUp()">Fechar Janela</button>
+    <button onclick="imprimirPrint()">Imprimir a página</button>
+    
+</body>
+
+</html>

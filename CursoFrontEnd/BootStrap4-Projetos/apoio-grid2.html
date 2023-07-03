@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+    <title>Bootstrap - Sistema de grids</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+    <div class="container" style="background: #69c3ff;"> <!--conteiner-fluid ocupa todo espaço da tela-->
+
+        <br><br>
+        <h2>Largura Fixa</h2>
+        <div class="row">
+            <!-- é dentro da div que ficara o sistem ade grid(row),pois, dessa maneira, fica melhor para adaptar ao site-->
+            <div class="col-5" style="background: green;">Área 1</div>
+            <div class="col-7" style="background: yellow;">Área 2</div>
+        </div>
+
+        <br><br>
+
+        <h2>Largura automática(auto-layout)</h2>
+        <div class="row">
+            <div class="col" style="background: green;">Área 1</div> <!--para não empilhar divs, utilizar apenas .col-->
+            <div class="col-2" style="background: yellow;">Área 2</div>
+            <div class="col-3" style="background: green;">Área 3</div>
+            <div class="col-4" style="background: yellow;">Área 4</div>
+        </div>
+
+        <br><br>
+
+        <h2>Largura igual empilhada</h2>
+        <div class="row">
+            <div class="col-md" style="background: yellow;">Área 1</div>
+            <!--para isso você insere um tamanho maior do que você quer que empilhe-->
+            <div class="col-md" style="background: green;">Área 2</div>
+            <div class="col-md" style="background: yellow;">Área 3</div>
+        </div>
+
+        <br><br>
+
+        <h2>Ordenando</h2>
+        <div class="row">
+            <div class="col-md-4 order-3" style="background: yellow;">Área 1</div>
+            <!--para isso você insere um tamanho maior do que você quer que empilhe-->
+            <div class="col-md-4 order-2" style="background: green;">Área 2</div>
+            <div class="col-md-4 order-1" style="background: yellow;">Área 3</div>
+        </div>
+
+        <h2>offset</h2>
+        <div class="row">
+            <div class="col-sm-6 offset-md-3" style="background: pink;"> <!--offset serve para centralizar o item-->
+                login
+            </div>
+        </div>
+
+        <h2>offset múltiplos alinhamentos</h2>
+        <div class="row">
+            <div class="col-md-3 offset-md-3" style="background: pink;">
+                <!--nesse caso, o offset seria utilizado apenas para completar o que falta e deixar os itens centralizados-->
+                login
+            </div>
+            <div class="col-md-3" style="background: pink;">
+                login
+            </div>
+        </div>
+
+        <h2>Aninhamentos</h2> <!-- Aqui ele cria row dentro de row e vai criando um novo sistema de grid-->
+        <div class="row">
+            <div class="col-md-6" style="background: pink; border: 1px solid red;">
+                col-md-6
+                <div class="row">
+                    <div class="col-md-6" style="background: yellow;">
+                        <div class="row">
+                            <div class="col-md-6" style="background: yellow;">
+                                Conteúdo 1
+                            </div>
+                            <div class="col-md-6" style="background: rgb(241, 99, 3);">
+                                Conteúdo 2
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6" style="background: green;">
+                        <div class="row">
+                            <div class="col-md-6" style="background: rgb(4, 0, 255);">
+                                Conteúdo 3
+                            </div>
+                            <div class="col-md-6" style="background: rgb(235, 11, 197);">
+                                Conteúdo 4
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

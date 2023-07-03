@@ -1,0 +1,257 @@
+/*-------Layout Padrão--------*/
+
+html, body, #home {
+    height: 100%; 
+    overflow-x: hidden;
+}
+
+body {
+    background: url(../img/capa.png), 
+                url(../img/ruido.png), 
+                linear-gradient(50deg, #ff4169, #7c26f8);
+    font-family: Helvetica, sans-serif;
+}
+
+/*-------Fim Layout Padrão--------*/
+
+/*Início Header*/
+
+header a {
+    color: #fff;
+}
+
+header a#barra:hover {
+    color: #fff;
+    cursor: default;
+}
+
+header a.link:hover {
+    color: #d3d3d3;
+    text-decoration: underline;
+}
+
+.bg-transparente {
+    background: #000;
+    opacity: 0.7;
+}
+
+/*Fim header*/
+
+/*Início Home*/
+section#home .container {
+    margin-top: 4.3rem;
+}
+
+section#home .capa {
+    text-align: center;
+}
+
+h1.display-1 {
+    font-weight: 500;
+    letter-spacing: -0.2rem;
+    font-size: 6rem;
+    color:#fff;
+}
+
+div.capa a.btn {
+    color: #fff
+}
+
+div.capa .btn-roxo {
+    background: #8c3dfc;
+    border-radius: 50px;
+}
+
+div.capa .btn-transparente {
+    border: 2px solid #fff;
+    border-radius: 50px;
+}
+
+div.capa .btn-roxo:hover {
+    background: #6a00ff;
+}
+
+div.capa .btn-transparente:hover {
+    background: #fff;
+    color: #000;
+}
+
+
+
+/*Fim Home*/
+
+/*Início Serviços*/
+#servicos{
+    padding: 2rem 0 2rem 0;
+    background: #fff;
+}
+
+#servicos .caixa {
+    text-align: justify;
+}
+
+#servicos img {
+    margin: 0rem 0 0.8rem 0;
+}
+
+#servicos h1 {
+    font-weight: 600;
+    font-size: 2.8rem;
+    color: #8c3dfc;
+}
+
+#servicos h2 {
+    font-weight: 600;
+    font-size: 2.3rem;
+    color: #8c3dfc;
+}
+
+#servicos p {
+    text-indent: 1rem;
+}
+
+
+/*Fim Serviços*/
+
+/*Início Recurso*/
+
+#recurso{
+    padding: 2rem 0 2rem 0;
+}
+
+#recurso .caixa {
+    text-align: justify;
+}
+
+
+#recurso h1 {
+    font-weight: 600;
+    font-size: 2.8rem;
+    color: #cfeaff;
+}
+
+#recurso h2 {
+    font-weight: 600;
+    font-size: 2rem;
+    color: #cfeaff;
+}
+
+#recurso p {
+    text-indent: 1rem;
+    color: #fff;
+}
+
+#recurso .rotacionar {
+    padding-left: 80px;
+    transform: rotate(30deg);
+}
+
+/*Fim Recurso*/
+
+/*Início Rodapé*/
+#rodape {
+    position: relative;
+    background: #000;
+    padding: 50px 0 20px 0;
+}
+
+#rodape h5 {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#rodape a {
+    color: #c2c2c2;
+}
+
+#rodape .caixa {
+    padding-left: 0 !important;
+}
+/*Fim Rodapé*/
+
+/*Média Queries*/
+
+@media (min-width:547px) and (max-width: 575px) {
+    a.btn-roxo {
+        display: block;
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width: 767.98px) {
+    a#entrar {
+        display: inline-block;
+        margin-top: 0.7rem;
+        padding: 0rem 0.2rem;
+        border: 2px solid #fff;
+        border-radius: 0.25rem;
+    }
+
+    a#entrar:hover {
+        text-decoration: none;
+    }
+
+    #home h1 {
+        padding: 0 1.2rem;
+        font-size: 4.5rem;
+    }
+
+    #home .carousel-item {
+        height: 24rem;
+    }
+
+    #home .ajustes h1 {
+
+        padding-top: 5rem;
+        font-size: 4rem;
+    }
+
+    #home a.btn-roxo {
+        margin-bottom: 0.5rem;
+    }
+
+    #home a.btn-lg {
+        line-height: 2rem;
+        width: 16rem;
+    }
+
+    #servicos .align-self-center {
+        margin: 2rem 0 0 0;
+        
+    }
+    
+    #servicos .caixa {
+        margin: 2rem 0 2rem 0;
+        padding: 2rem;
+        border: 2px solid #dfdfdf;
+        border-radius: 1rem;
+    
+    }
+
+    #recurso .caixa {
+        margin: 2rem 0 2rem 0;
+        padding: 2rem;
+        border: 2px solid #dfdfdf;
+        border-radius: 1rem;
+    
+    }
+
+    #rodape .caixa {
+        margin: 0.5rem 0 0.5rem 0;
+    }
+
+
+}
+
+@media (max-width:320px) {
+    #servicos h1 {
+        font-size: 2.8rem;
+    }
+
+    #home .ajustes h1 {
+        font-size: 3.6rem;
+    }
+
+
+}

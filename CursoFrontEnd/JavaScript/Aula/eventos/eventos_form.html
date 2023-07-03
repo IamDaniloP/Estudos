@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implementação do JavaScript - Janela</title>
+    <script>
+        function acao() {
+            console.log('O campo foi selecionado')
+        }
+
+        function acao2() {
+            console.log('O campo que estava selecionado perdeu o foco');
+        }
+
+        function acao3() {
+            console.log('Estado foi modificado');
+        }
+    </script>
+
+</head>
+
+<body>
+    Teste 1
+    <input onfocus="acao()" type="text"> <!--Sempre que o campo é clicado o foco do cursor é aplicado-->
+    <br><br>
+    Teste 2
+    <input onblur="acao2()" type="text"> <!--Sempre que o campo é perde o foco o evento é aplicado-->
+    <br><br>
+    Teste 3
+    <select onchange="acao3()">
+        <option>-- Selecione --</option>
+        <option value="1">Primeira opção</option>
+        <option value="2">Segunda opção</option>
+    </select>
+</body>
+</html>

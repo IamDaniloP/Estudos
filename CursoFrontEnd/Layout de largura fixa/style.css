@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f2f2f2;
+}
+
+#container {
+    width: 720px;
+    margin: 0 auto; /* Dessa maneira ele centraliza a div, deixa a altura zero e as laterais com um distanciamento igual*/
+    background: #fff;
+}
+
+#marca {
+    height: 100px;
+    background: #9e9e9e;
+    text-align: center;
+    line-height: 100px;
+}
+
+#conteudo {
+
+    width: 520px;
+    float: right;
+}
+
+#conteudo-principal {
+    width: 320px;
+    float: left;
+
+}
+
+#conteudo-secundario {
+    text-align: center;
+    float: right;
+    width: 180px;
+    height: 190px;
+    background: #d1d1d1;
+}
+
+
+#navegacao {
+
+    width: 180px;
+    height: 190px;
+    float: left;
+    background: #d1d1d1;
+}
+
+#rodape {
+    clear: both;
+    background: #c4c4c4;
+    padding: 5px;
+}
+
+ul {
+    list-style-type: none;
+}
+li {
+    text-indent: 10px;
+    margin-top: 10px;
+}
+#navegacao li>a {
+    text-decoration: none;
+    display: block;
+    color: #000;
+    line-height: 50px;
+
+}
+
+#navegacao a:hover {
+    background: #d1d1;
+    color: #fff;
+}

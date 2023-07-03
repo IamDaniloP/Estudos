@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Tags do Input</title>
+</head>
+
+<body>
+
+    <form action="">
+        
+        <!--Color-->
+        <label for="color">Color</label>
+        <input type="color" name="color" id="color">
+
+        <!--Date-->
+        <label for="date">Date</label>
+        <input type="date" name="date" id="date">
+
+        <!--Range-->
+        <label for="range">Range</label>
+        <input type="range" name="range" id="range" min="20" max="40" value="30"> <!--O value vai definir seu valor padrão-->
+
+        <!--Pesquisa-->
+        <label for="search">Pesquisar</label>
+        <input type="search" name="search" id="search">
+
+        <!--Url-->
+        <label for="url">Digite o url</label>
+        <input type="url" name="url" id="url">
+
+        <!--Idade-->
+        <label for="number">Idade</label>
+        <input type="number" name="number" id="number" min="5" max="10" step="5"> <!--Define que o valor tem que estar necessariamente entre esses valores para ser enviado-->
+        <!--Email-->
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required> <!--O required torna o elemento necessário ser preenchido para que o envio seja realizado-->
+
+        <!--Nome-->
+        <label for="text"> Nome</label>
+        <input type="text" id="nome" autofocus> <!--Serve para assim que entrar no site ele já deixar aquele campo marcado como principal-->
+
+        <!--Enviar-->
+        <input type="submit" value="Enviar">
+    
+    </form>
+    
+</body>
+
+</html>
