@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - EvoMoney</title>
+    <link rel="icon" href="Img/Logo-FavIcon.png">
+    <link rel="stylesheet" href="./Css/style-login.css">
+
+</head>
+
+<body>
+
+    <section class="flex" id="login">
+
+        <div id="logo">
+            <a href="index.html"><img src="Img/logo.png" alt="logo"></a>
+        </div>
+
+        <div class="flex" id="box-login">
+
+            <div id="profile">
+                <i class="fa-solid fa-user"></i>
+            </div>
+
+            <div id="container-input">
+
+                <div class="input-box flex">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" name="email" class="input" id="emailLogin" placeholder="Digite seu email">
+                </div>
+                
+                <div class="input-box flex">
+                    <i class="fa-solid fa-key"></i>
+                    <input type="password" name="senha" class="input" id="senhaLogin" placeholder="Digite sua senha">
+                    <p id="alertSenha"></p>
+                    <p id="alertCampos"></p>
+                </div>
+
+            </div>
+
+            <div id="button">
+                <button onclick="login()">Entrar</button>
+            </div>
+
+            <div class="flex" id="cadastrar">
+
+                <a href="cadastro.html">
+                    <p>Cadastre-se</p>
+                </a>
+
+            </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--Script Login-->
+    <script src="Js/login.js"></script>
+
+    <!--Ícones-->
+    <script src="https://kit.fontawesome.com/31fa520848.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

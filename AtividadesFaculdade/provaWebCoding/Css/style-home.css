@@ -1,0 +1,330 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1,h2,h3,p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.container {
+    width: 1250px;
+}
+
+.flex {
+    display: flex;
+}
+
+/*Início header*/
+
+header {
+    background:  #47c83e;
+}
+
+#navegacao {
+    margin: 0 auto;
+    padding: 0.5rem;
+    justify-content: space-between;
+}
+
+#logo-site {
+    width: 210px;
+}
+
+#navegacao-menu li{
+    margin: 0.8rem 0.6rem;
+}
+
+#navegacao #navegacao-menu a.menu-link{
+    color: #ffffff;
+}
+
+#navegacao #navegacao-menu li:hover {
+    transition: 0.3s;
+    transform: translate(0, -10%);
+}
+
+a#login {
+    padding: 0.5rem;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 7px;
+}
+
+a#login:hover {
+    transition: 0.8s;
+    background: #fff;
+    color: #000;
+}
+
+/*Fim header*/
+
+/*Início Home*/
+
+#home {
+    background:  #47c83e;
+}
+
+#home-main {
+    margin: 0 auto;
+}
+
+#home #text {
+    width: 50%;
+    align-self: center;
+}
+
+#home h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+#home span {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+#home h4 {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #fff;
+}
+
+#download {
+    margin-top: 1.3rem;
+}
+
+#download p {
+    align-self: center;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #fff;
+}
+
+#download i {
+    margin-top: 0.4rem;
+    padding: 0.3rem;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+#download #apple {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    padding: 0.3rem 0.5rem;
+    font-size: 1.1rem;
+}
+
+#download i:hover {
+    transition: 0.8s;
+    background-color: #fff;
+    color: #000;
+}
+
+#capa {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+
+/*Fim Home*/
+
+/*Início Infos*/
+
+#infos-main{
+    width: 1250px;
+    margin: 2rem auto;
+    overflow: hidden;
+    display: flex;
+}
+
+.caixas-info {
+    transition: transform 1s;
+}
+
+.infos-img {
+    width: 1250px;
+}
+
+.caixa-texto {
+    width: 50%;
+    padding-right: 1.5rem;
+    align-self: center;
+}
+
+.caixa-imagem {
+    width: 50%;
+}
+
+.caixa-texto h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.caixa-texto p {
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.caixa-imagem img {
+    width: 90%;
+    padding: 0.8rem;
+    border: 2px solid #e4e4e4;
+    border-radius: 10px;
+}
+
+.caixa-texto a {
+    display: inline-block;
+    padding: 0.4rem 0.5rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    background: #ffc107;
+    color: #fff;
+}
+
+/*Fim Infos*/
+
+/*Início Planos*/
+
+#planos #planos-main {
+    margin: 0 auto;
+    color:  #47c83e;
+    justify-content: space-between;
+}
+
+#planos-main h2 {
+    font-size: 70px;
+    text-transform: uppercase;
+    align-self: center;
+}
+
+#planos-main span {
+    display: block;
+    text-indent: 30px;
+    font-size: 70px;
+}
+
+.caixa-planos {
+    margin: 20px;
+    width: 300px;
+    height: 300px;
+    color: #000;
+    border-radius: 10px;
+}
+
+.conteudo-caixa-planos {
+    flex-direction: column;
+    padding: 1.2rem 0;
+    text-align: center;
+    align-items: center;
+    position: relative;
+}
+
+.conteudo-caixa-planos h3 {
+    margin: 0.50rem 0;
+    font-size: 1.5rem;
+    font-weight: 500; 
+}
+
+.conteudo-caixa-planos p.mes {
+    margin: 0.93rem 0;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.conteudo-caixa-planos p.obsMes {
+    margin: 0.75rem 0;
+    padding: 0 0.3rem;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+#planos .button {
+    margin: 0.75rem 0;
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff;
+    background: #ffc107;
+}
+
+.conteudo-caixa-planos .desconto {
+    position: absolute;
+    top: 60px;
+    color: red;
+    font-size: 1.2rem;
+}
+
+
+.caixa-planos:hover {
+    box-shadow: 1px 1px 15px 1px  #47c83e;
+    transition: 0.5s;
+    transform: translate(0, -3%);
+    cursor: pointer;
+}
+
+
+/*Fim Planos*/
+
+/*Início Rodapé*/
+
+#rodape {
+    background:  #47c83e;
+    padding: 1rem 0 0.5rem 0;
+}
+
+#rodape-main {
+    margin: 0 auto;
+}
+
+#icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.8rem;
+}
+
+#icons i {
+    margin: 0 0.3rem;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+
+#icons i:hover {
+    transition: 0.7s;
+    background: #fff;
+    color: #000;
+}
+
+#rodape p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
+}
+
+/*Fim Rodapé*/
