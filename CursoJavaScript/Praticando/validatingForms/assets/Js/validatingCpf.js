@@ -1,4 +1,4 @@
-//070.987.720-03 2332323
+//070.987.720-03
 class ValidatingCpf {
     constructor (cpfNumber) {
         this.cpfNumber = cpfNumber;
