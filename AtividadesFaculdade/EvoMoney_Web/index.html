@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage - EvoMoney</title>
+    <link rel="icon" href="/Img/Logo-FavIcon.png">
+    <link rel="stylesheet" href="./Css/style-home.css">
+
+</head>
+
+<body>
+
+    <!--Início Header-->
+    <header>
+
+        <div class="container flex" id="navegacao">
+
+            <a href="index.html"><img src="Img/logo.png" alt="Logo do Site" id="logo-site"></a>
+
+            <div id="navegacao-menu">
+
+                <ul class="flex" id="opt-menu">
+
+                    <li><a href="" class="menu-link">Home</a></li>
+                    <li><a href="#infos" class="menu-link">Benefícios</a></li>
+                    <li><a href="#planos" class="menu-link">Planos</a></li>
+                    <li><a href="login.html" id="login">Entrar</a></li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </header>
+    <!--Fim Header-->
+
+    <!--Início Home-->
+    <section id="home">
+
+        <div class="container flex" id="home-main">
+
+            <div id="text">
+
+                <div id="text-home">
+
+                    <h2>Com contas organizadas,<span>você alcança as metas traçadas.</span></h2>
+                    <h4>O EvoMoney auxilia você a alcançar suas metas muito mais fácil.</h4>
+
+                </div>
+
+                <div class="flex" id="download">
+
+                    <p>Disponível para: </p>
+                    <a href="https://www.apple.com/br/app-store/"><i class="fa-brands fa-apple" id="apple"></i></a>
+                    <a href="https://play.google.com/store/games?device=windows"><i class="fa-brands fa-android"></i></a>
+
+                </div>
+
+            </div>
+
+            <div id="capa">
+
+                <img src="Img/capa-mulher.png" alt="foto mulher" id="mulher-capa">
+
+            </div>
+
+        </div>
+
+    </section>
+    <!--Fim Home-->
+
+    <!--Início Infos-->
+
+    <section id="infos">
+
+        <div id="infos-main">
+
+            <div class="caixas-info">
+
+                <div class="flex infos-img">
+
+                    <div class="caixa-texto">
+
+                        <h2>Saiba para onde vai o seu dinheiro</h2>
+                        <p>Com o EvoMoney, você categoriza todos os seus lançamentos. Com gráficos simples, você sabe de
+                            onde vem e para onde vai o seu dinheiro.</p>
+                        <a href="">Veja mais</a>
+
+                    </div>
+
+                    <div class="caixa-imagem">
+                        <img src="Img/info1.png" alt="info">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="caixas-info">
+
+                <div class="flex infos-img">
+
+                    <div class="caixa-imagem">
+                        <img src="Img/facil.png" alt="info">
+                    </div>
+
+                    <div class="caixa-texto">
+
+                        <h2>Fácil de utilizar</h2>
+                        <p>O EvoMoney vai além do básico e permite que você faça controles incríveis, essenciais para
+                            sua organização das finanças. Simples como tem que ser!</p>
+                        <a href="">Veja mais</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="caixas-info">
+
+                <div class="flex infos-img">
+
+                    <div class="caixa-texto">
+
+                        <h2>Suporte rápido e eficaz</h2>
+                        <p>Tempo é dinheiro! Caso possua algum tipo de dúvida nosso suporte estará pronto para
+                            solucionar sua dúvida. Contamos com IA para que você possua atendimento quando nossos
+                            atendentes não estiverem disponíveis</p>
+                        <a href="">Veja mais</a>
+
+                    </div>
+
+                    <div class="caixa-imagem">
+                        <img src="Img/suporte.png" alt="info">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--Fim Infos-->
+
+    <!--Início Planos-->
+
+    <section id="planos">
+
+        <div class="container flex" id="planos-main">
+
+            <h2>Pla<span>nos</span></h2>
+
+            <div class="container-caixas flex" onclick="campoSelecionado()">
+
+                <div class="caixa-planos">
+
+                    <div class="conteudo-caixa-planos flex" id="unicoMes">
+
+                        <h3>1 Mês</h3>
+
+                        <p class="mes">R$ 9,90 / Mês</p>
+                        <p class="obsMes"> O valor R$ 9,90 será cobrado a cada mês. Possui renovação automática.</p>
+
+                        <a class="button">Assinar agora</a>
+
+                    </div>
+
+                </div>
+
+                <div class="caixa-planos">
+
+                    <div class="conteudo-caixa-planos flex" id="dozeMeses">
+
+                        <h3>12 Meses</h3>
+
+                        <p class="desconto">-42%</p>
+                        <p class="mes">R$ 5,90 / Mês</p>
+                        <p class="obsMes"> O valor R$ 70,80 será cobrado a cada 12 meses. Possui renovação automática.</p>
+
+                        <a class="button">Assinar agora</a>
+
+                    </div>
+                </div>
+
+                <div class="caixa-planos">
+
+                    <div class="conteudo-caixa-planos flex" id="seisMeses">
+
+                        <h3>6 Meses</h3>
+
+                        <p class="desconto">-21%</p>
+                        <p class="mes">R$ 7,90 / Mês</p>
+                        <p class="obsMes"> O valor R$ 47,40 será cobrado a cada 6 meses. Possui renovação automática.</p>
+
+                        <a class="button">Assinar agora</a>
+
+                    </div>
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--Fim Planos-->
+
+    <!--Início Rodapé-->
+
+    <section id="rodape">
+
+        <div class="container" id="rodape-main">
+
+            <div id="icons">
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://twitter.com/login?lang=pt"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+
+            <p>&copy; Todos direitos reservados</p>
+
+        </div>
+
+    </section>
+    
+    <!--Fim Rodapé-->
+    <script src="./Js/carousel.js"></script>
+    <script src="./Js/login.js"></script>
+
+    <!--Ícones-->
+    <script src="https://kit.fontawesome.com/31fa520848.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
